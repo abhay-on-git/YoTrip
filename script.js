@@ -7,14 +7,14 @@ let toggelBtn = document.getElementById("togle-btn");
 let toggelDisc = document.getElementById("toggledisc");
 var check = true;
 toggelBtn.addEventListener("click",()=>{
-document.body.classList.toggle("dark-theme");
-if(check){
-  toggelDisc.style.alignSelf = "flex-end";
-  check = false;
-}else{
-  toggelDisc.style.alignSelf = "flex-start";
-  check = true;
-}
+  document.body.classList.toggle("dark-theme");
+  if(check){
+    toggelDisc.style.alignSelf = "flex-end";
+    check = false;
+  }else{
+    toggelDisc.style.alignSelf = "flex-start";
+    check = true;
+  }
 })
 
 // gsap.from(".hl h4",{
