@@ -17,13 +17,16 @@ toggelBtn.addEventListener("click",()=>{
   }
 })
 
-// gsap.from(".hl h4",{
-//     y:10,
-//     ease:Expo,
-//     duration: 1,
-//     stagger:0.2,
-//     opacity:0,
-// })
+let clickToSeeBtn = document.querySelector(".clicktosee-btn");
+let video = document.querySelector(".page5 video");
+
+clickToSeeBtn.addEventListener("mouseenter",()=>{
+  video.style.opacity = "1";
+  video.style.transition = 'opacity 0.5s ease';
+})
+clickToSeeBtn.addEventListener("mouseleave",()=>{
+  video.style.opacity = "0";
+})
 
 gsap.from(".page1 img",{
 y:30,
@@ -46,11 +49,10 @@ Shery.textAnimate([".pg1p1 h1",".pg1p2 span"], {
 //    style:2,
 //    debug:true,
 // })
-// Shery.imageEffect(".pg1-left-img img", {
-//     style: 2, //Select Style
+// Shery.imageEffect("#pg1-left-img img", {
+//     style: 6, //Select Style
 //     debug: true, // Debug Panel
 //     config: {
 //       /* Config made from debug panel */
 //     },
-//     preset: "./presets/wigglewobble.json",
 //   });

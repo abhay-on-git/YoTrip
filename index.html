@@ -12,7 +12,9 @@
     <title>YoTrip!</title>
 </head>
 <body>
-
+    <div class="toggel-btn" id="togle-btn">
+        <div class="toggel-disc" id="toggledisc"></div>
+    </div>
     <main>
     <header>
         <div class="hl">
@@ -29,14 +31,12 @@
             <h4><a href="">See Bookings !</a></h4>
         </div>
     </header>
-    <div class="toggel-btn" id="togle-btn">
-        <div class="toggel-disc" id="toggledisc"></div>
-    </div>
+    
         <div class="page1">
             <div class="pg1p1-out">
                 <div class="pg1p1" >
                     <h1>Mesmerizing<br> Locations.</h1>
-                    <div class="pg1-left-img" data-scroll data-scroll-speed="2">
+                    <div id="pg1-left-img" class="pg1-left-img" data-scroll data-scroll-speed="2">
                         <img src="images/pinkplant.jpg" alt="">
                     </div>
                 </div>
@@ -77,8 +77,8 @@
                 <span>"nature is waiting for you"</span>
               <div class="pg3p1-in">
                 <h1>People says.</h1>
-              <div class="pg3img1"  >
-                <img src="images/standingmen.jpg">
+              <div class="pg3img1">
+                <img  data-scroll data-scroll-speed="1.1" src="images/standingmen.jpg">
               </div>
               <p>We are the best among all, in the competition.</p>
               </div>
@@ -121,13 +121,14 @@
                     <span>"click to see"</span>
                 </div>
             </div>
-            <!-- <video src=""></video> -->
+            <video autoplay loop muted src="images/travelVideo.mp4"></video>
         </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
     <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
     <script src="script.js" defer></script>
 
